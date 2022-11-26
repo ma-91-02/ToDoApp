@@ -1,0 +1,249 @@
+{
+	"info": {
+		"_postman_id": "ec1e0dae-eae6-4825-ac1a-182eac098309",
+		"name": "ToDo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19556214"
+	},
+	"item": [
+		{
+			"name": "Create Post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1vaGFtZWRAdGVzdC5jb20iLCJ1c2VySWQiOiI2MzdkNjIzZTdiZTA0NWNkZDhmNmMwNWYiLCJpYXQiOjE2Njk0NjkzNjgsImV4cCI6MTY2OTQ3Mjk2OH0.6Mn8TU-JfmPTi40osQV4WoFn9y-3tepGozPSmB0MHvU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"other client2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4001/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1vaGFtZWRAdGVzdC5jb20iLCJ1c2VySWQiOiI2MzdkNjIzZTdiZTA0NWNkZDhmNmMwNWYiLCJpYXQiOjE2NjkyODE3NzEsImV4cCI6MTY2OTI4NTM3MX0.7TIYNKDbW15uRkbhMv-p5F3G0GlSbBInAD90Cj7XMAk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"Second 4a postshjgjhg\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4001/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Posts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1vaGFtZWRAdGVzdC5jb20iLCJ1c2VySWQiOiI2MzdkNjIzZTdiZTA0NWNkZDhmNmMwNWYiLCJpYXQiOjE2Njk0NzQ2OTMsImV4cCI6MTY2OTQ3ODI5M30.TQjvSH5WwmfpG8RTnX35ZMrJbsgVwnQfJJHL1E6Oj40",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4001/posts/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"posts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1vaGFtZWRAdGVzdC5jb20iLCJ1c2VySWQiOiI2MzdkNjIzZTdiZTA0NWNkZDhmNmMwNWYiLCJpYXQiOjE2NjkyODU1NzIsImV4cCI6MTY2OTI4OTE3Mn0.zxEq_haRXZrZQUGlaadivcSl2chHCAZ6dbP7Z06RjmE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4001/post/postid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"post",
+						"postid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1vaGFtZWRAdGVzdC5jb20iLCJ1c2VySWQiOiI2MzdkNjIzZTdiZTA0NWNkZDhmNmMwNWYiLCJpYXQiOjE2NjkyODE3MzMsImV4cCI6MTY2OTI4NTMzM30.Yg_gu1ZP-Ul4UE0pZk5BBumgo9bkKxlblYgYmxGqv9w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"mohamed@test.com\",\n    \"password\":\"mohamed\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4001/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"tes2t23@mail.com\",\n    \"name\":\"test name\",\n    \"password\":\"test password\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4001/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
